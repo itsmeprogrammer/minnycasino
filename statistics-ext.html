@@ -101,7 +101,7 @@
                         </a>
                         <ul class="sub-menu">
                           <li class="has-sub expand active">
-                                <a href="index.html">
+                                <a href="javascript:;">
                                     <b class="caret"></b>
                                    All Channels
                                 </a>
@@ -170,26 +170,26 @@
                             <span>Reports</span>
                         </a>
                         <ul class="sub-menu">
-                            <li class="has-sub active"><a href="statistics.html">Detailed activity report</a></li>
+                            <li class="has-sub "><a href="statistics.html">Detailed activity report</a></li>
 
                           <li class="has-sub expand ">
                                 <a href="javascript:;">
                                     <b class="caret"></b>
                                    Customer reports
                                 </a>
-                                <ul class="sub-menu" style="display: block;">
-                                    <li class="has-sub">
+                                <ul class="sub-menu active" style="display: block;">
+                                      <li class="has-sub active">
                                         <a href="statistics-ext.html">
                                            Customer activity 
                                         </a>
                                     </li>
                                     <li class="has-sub">
-                                        <a href="#">
+                                        <a href="statistics-ext-type-daily.html">
                                            Customer daily activity 
                                         </a>
                                     </li>
                                      <li class="has-sub">
-                                       <a href="#">
+                                       <a href="reports-all-players.html">
                                            Customer registrations
                                         </a>
                                     </li>
@@ -202,7 +202,7 @@
                                 </a>
                                 <ul class="sub-menu" style="display: block;">
                                     <li class="has-sub">
-                                        <a href="#">
+                                        <a href="statistics-ext-subaff.html">
                                           Sub-affiliate activity
                                         </a> 
                                     </li>
@@ -212,7 +212,7 @@
                                         </a>
                                     </li>
                                     <li class="has-sub">
-                                       <a href="#">
+                                       <a href="reports-all-players-subaff.html">
                                           Sub-affiliate registrations
                                         </a>
                                     </li>
@@ -349,29 +349,21 @@
             <!-- begin breadcrumb -->
             <ol class="breadcrumb float-xl-right">
                 <li class="breadcrumb-item"><a href="javascript:;">Home</a></li>
-                <li class="breadcrumb-item active">Detailed activity report</li>
+                <li class="breadcrumb-item active">Customer activity</li>
             </ol>
-            <h1 class="page-header">Detailed activity report <small> </small></h1>
+            <h1 class="page-header">Customer activity<small> </small></h1>
             <!-- end breadcrumb -->
                <div class="row">
                 <div class="col-md-12">
 
                 <div class="alert alert-primary">
                         <i class="fa fa-info-circle fa-lg m-r-5 pull-left m-t-2"></i>  
-                       This report lists detailed activity recorded against your account and the resulting income. Use the filters and column selectors to analyse the available data.
-                    </div>
+                       This report lists detailed activity per customer belonging to your account. You can use the filters to limit customers by their registration details.
 
 
-                     <div class="alert alert-info">
-                        <div class="form-group" >
-                                <label>Filter by channel:</label>
-                            <select class="form-control ">
-                                <option value="All Channels">All Channels</option>
-                                <option value="MinnyCasino">MinnyCasino</option>
-                                <option value="Sub Affliate">Sub Affliate</option>
-                            </select>
-                        </div>
+
                     </div>
+
                 <div class="row">
                 <div class="col-6">
                  <div class="panel panel-success">
@@ -408,6 +400,16 @@
                     <input type="date" name="" class="form-control" >
                     <a href="#">Clear dates</a>
                 </div>
+
+                <div class="form-group">
+                    <label>Group by customer detail:</label>
+                     <select class="form-control ">
+                                <option value="All Channels">Please Select</option>
+                                <option value="Customer">Customer</option>
+                                <option value="Country">Country</option>
+                                <option value="Payload">Payload</option>
+                            </select>
+                </div>
             </div>
         </div>
 
@@ -421,22 +423,27 @@
                         <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
                         <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
                     </div>
-                    <h4 class="panel-title">Choose columns</h4>
+                    <h4 class="panel-title">Customer registration details</h4>
                 </div>
                 <div class="panel-body">
+                     <div class="alert alert-danger">
+                        <i class="fa fa-info-circle fa-lg m-r-5 pull-left m-t-2"></i>  
+                        Choose which customer registration details to include in the report, when grouping results by customer.
+
+
+                    </div>
                     <form>
                         <table class="table table-bordered">
                             <tbody>
                                 <tr>
                                     <td>
                                         <ul class="inline nowrap" style="list-style: none;">
-                                        <li><label><input type="checkbox" name="sd" value="1" checked="checked">&nbsp;Show&nbsp;dates                </label></li>
-                                        <li><label><input type="checkbox" name="sc" value="1">&nbsp;Show&nbsp;campaigns                </label></li>
-                                        <li><label><input type="checkbox" name="scg" value="1">&nbsp;Show&nbsp;campaign&nbsp;groups                </label></li>
-                                        <li><label><input type="checkbox" name="sm" value="1">&nbsp;Show&nbsp;media                </label></li>
-                                        <li><label><input type="checkbox" name="so" value="1">&nbsp;Show&nbsp;landing&nbsp;pages                </label></li>
-                                        <li><label><input type="checkbox" name="ss" value="1">&nbsp;Show&nbsp;brands                </label></li>
-                                        <li><label><input type="checkbox" name="spr" value="1">&nbsp;Show&nbsp;products                </label></li>
+                                        <li><label><input type="checkbox" name="sd" value="1" checked="checked">&nbsp;Join&nbsp;date                </label></li>
+                                        <li><label><input type="checkbox" name="sc" value="1">&nbsp;Campaign&nbsp;                </label></li>
+                                        <li><label><input type="checkbox" name="scg" value="1">&nbsp;Show&nbsp;Media&nbsp;groups                </label></li>
+                                        <li><label><input type="checkbox" name="sm" value="1">&nbsp;Join&nbsp;country                </label></li>
+                                        <li><label><input type="checkbox" name="so" value="1">&nbsp;Referring &nbsp;URL &nbsp;pages                </label></li>
+                                        <li><label><input type="checkbox" name="ss" value="1">&nbsp;Payload&nbsp;                </label></li>
                                         </ul>
                                     </td>
                                 </tr>
@@ -455,9 +462,15 @@
                         <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
                         <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
                     </div>
-                    <h4 class="panel-title">Filter report</h4>
+                    <h4 class="panel-title">Customer registration filters</h4>
                 </div>
                 <div class="panel-body">
+                    <div class="alert alert-warning">
+                        <i class="fa fa-info-circle fa-lg m-r-5 pull-left m-t-2"></i>  
+                        Filter customer activity to customers with specific registration details.
+
+
+                    </div>
                     <div class="row">
                     <div class="col-sm-4">
                     <div class="form-group">
@@ -493,18 +506,14 @@
                   <div class="col-sm-4">
 
                   <div class="form-group">
-                    <label>Filter brands:</label>
-                <select class="form-control ">
-                    <option value="All brands">All brands</option>
-                </select>
+                    <label>Join From:</label>
+                    <input type="date" name="" class="form-control">
                 </div>
                 </div>
                   <div class="col-sm-4">
-                 <div class="form-group">
-                    <label>Filter by products:</label>
-                <select class="form-control ">
-                    <option value="All products">All products</option>
-                </select>
+                   <div class="form-group">
+                    <label>Date To:</label>
+                    <input type="date" name="" class="form-control">
                 </div>
                 </div>
             </div>
