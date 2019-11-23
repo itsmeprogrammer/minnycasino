@@ -363,194 +363,140 @@
 
 
                     </div>
+                    <div class="form-group">
+                        <label>Customer Activity</label> <input type="" name="" style="border: 1px solid #d3d8de;
+                        box-shadow: none; font-size: 12px;
+                        line-height: 1.42857143;
+                        height: 34px; padding: 6px 12px;"> <label>Reference ID </label>
+                   
+                    </div>
+
+                     <div class="form-group">
+                        <label>From</label> <input type="date" name="" style="border: 1px solid #d3d8de;
+                        box-shadow: none; font-size: 12px;
+                        line-height: 1.42857143;
+                        height: 34px; padding: 6px 12px;"> To <input type="date" name="" style="border: 1px solid #d3d8de;
+                        box-shadow: none; font-size: 12px;
+                        line-height: 1.42857143;
+                        height: 34px; padding: 6px 12px;">
+                   
+                    </div>
+
 
                 <div class="row">
-                <div class="col-6">
-                 <div class="panel panel-success">
+                <div class="col-12">
+                 <div class="panel panel-inverse">
                    <div class="panel-heading">
                     <div class="panel-heading-btn">
                         <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
                         <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-redo"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a> 
                         <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
                     </div>
-                    <h4 class="panel-title">Reports period</h4>
+                    <h4 class="panel-title">Customer activity </h4>
                 </div>
                 <div class="panel-body">
-                    <div class="form-group">
-                    <label>Preset Period</label>
-                            <label>Filter by channel:</label>
-                            <select class="form-control ">
-                                <option value="All Channels">This Month</option>
-                                <option value="Last 7 days">Last 7 days</option>
-                                <option value="Last 30 days">Last 30 days</option>
-                                <option value="This month">This month</option>
-                                <option value="Last month">Last month</option>
-                                <option value="This year">This year</option>
-                            </select>
-                        </div>
-
-                <div class="form-group">
-                    <label>Date from:</label>
-                    <input type="date" name="" class="form-control" >
-                </div>
-
-                <div class="form-group">
-                    <label>Date to:</label>
-                    <input type="date" name="" class="form-control" >
-                    <a href="#">Clear dates</a>
-                </div>
-
-                <div class="form-group">
-                    <label>Group by customer detail:</label>
-                     <select class="form-control ">
-                                <option value="All Channels">Please Select</option>
-                                <option value="Customer">Customer</option>
-                                <option value="Country">Country</option>
-                                <option value="Payload">Payload</option>
-                            </select>
-                </div>
-            </div>
-        </div>
-
-    </div>
-         <div class="col-6">
-                 <div class="panel panel-success">
-                   <div class="panel-heading">
-                    <div class="panel-heading-btn">
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-redo"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
-                    </div>
-                    <h4 class="panel-title">Customer registration details</h4>
-                </div>
-                <div class="panel-body">
-                     <div class="alert alert-danger">
-                        <i class="fa fa-info-circle fa-lg m-r-5 pull-left m-t-2"></i>  
-                        Choose which customer registration details to include in the report, when grouping results by customer.
-
-
-                    </div>
-                    <form>
-                        <table class="table table-bordered">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <ul class="inline nowrap" style="list-style: none;">
-                                        <li><label><input type="checkbox" name="sd" value="1" checked="checked">&nbsp;Join&nbsp;date                </label></li>
-                                        <li><label><input type="checkbox" name="sc" value="1">&nbsp;Campaign&nbsp;                </label></li>
-                                        <li><label><input type="checkbox" name="scg" value="1">&nbsp;Show&nbsp;Media&nbsp;groups                </label></li>
-                                        <li><label><input type="checkbox" name="sm" value="1">&nbsp;Join&nbsp;country                </label></li>
-                                        <li><label><input type="checkbox" name="so" value="1">&nbsp;Referring &nbsp;URL &nbsp;pages                </label></li>
-                                        <li><label><input type="checkbox" name="ss" value="1">&nbsp;Payload&nbsp;                </label></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </form>
-                </div>
-            </div>
-        </div>
-     <div class="col-6">
-                 <div class="panel panel-success">
-                   <div class="panel-heading">
-                    <div class="panel-heading-btn">
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-redo"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
-                    </div>
-                    <h4 class="panel-title">Customer registration filters</h4>
-                </div>
-                <div class="panel-body">
-                    <div class="alert alert-warning">
-                        <i class="fa fa-info-circle fa-lg m-r-5 pull-left m-t-2"></i>  
-                        Filter customer activity to customers with specific registration details.
-
-                    </div>
-                    <div class="row">
-                            <div class="col-sm-4">
-                            <div class="form-group">
-                            <label>Filter by campaign group:</label>
-
-                            <select class="form-control ">
-                                <option value="All campaign groups">All campaign groups</option>
-                                <option value="No campaign group">No campaign group</option>
-                            </select>
+                    <table class="table table-bordered" id="example2">
+                        <thead>
+                            <tr>
+                                <th>Campaign Group</th>
+                                <th>Campaign </th>
+                                <th>Media ID </th>
+                            </tr>
+                        </thead>
+                    </table>
+                    
                         </div>
                         </div>
-                <div class="col-sm-4">
-                <div class="form-group">
-                    <label>Filter by campaign:</label>
-                <select class="form-control ">
-                    <option value="All campaign groups">All campaigns</option>
-                    <option value="No campaign group">Default campaign (1)</option>
-                </select>
-                </div>
-                </div>
-                  <div class="col-sm-4">
-                <div class="form-group">
-                    <label>Filter by media IDs:</label>
-                    <input type="text" name="" class="form-control" >
-                </div>
-            </div>
-              <div class="col-sm-4">
-                 <div class="form-group">
-                    <label>Filter by landing page IDs:</label>
-                    <input type="text" name="" class="form-control" >
-                </div>
-                </div>
-                  <div class="col-sm-4">
-
-                  <div class="form-group">
-                    <label>Join From:</label>
-                    <input type="date" name="" class="form-control">
-                </div>
-                </div>
-                  <div class="col-sm-4">
-                   <div class="form-group">
-                    <label>Date To:</label>
-                    <input type="date" name="" class="form-control">
-                </div>
-                </div>
-            </div>
-        </div> 
-            <!-- end panel -->
-
-
-        </div>
-        <!-- end col-4 -->
-    </div>
-     <div class="col-6">
-                 <div class="panel panel-success">
+                    </div>
+                       <div class="col-12">
+                 <div class="panel panel-inverse">
                    <div class="panel-heading">
                     <div class="panel-heading-btn">
                         <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
                         <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-redo"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a> 
                         <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
                     </div>
-                    <h4 class="panel-title">Download options</h4>
+                         <h4 class="panel-title">Customer activity summary</h4>
                 </div>
                 <div class="panel-body">
-                    <div class="form-group">
-                    <button type="submit" class="btn btn-warning">Display Report</button>
-                    <button type="submit" class="btn btn-warning">Download Report</button>
-                     </div>
-                <div class="form-group">
-                <div class="alert alert-primary">
-                        <i class="fa fa-info-circle fa-lg m-r-5 pull-left m-t-2"></i>  
-                       No data.
-                    </div>
+
+                     <div class="form-group">
+                        <label>From</label> <input type="date" name="" style="border: 1px solid #d3d8de;
+                        box-shadow: none; font-size: 12px;
+                        line-height: 1.42857143;
+                        height: 34px; padding: 6px 12px;"> To <input type="date" name="" style="border: 1px solid #d3d8de;
+                        box-shadow: none; font-size: 12px;
+                        line-height: 1.42857143;
+                        height: 34px; padding: 6px 12px;">
+                   
                     </div>
 
+                    <table class="table table-bordered" id="example3">
+                        <thead>
+                            <tr>
+                                <th>Join Date</th>
+                                <th>Campaign</th>
+                                <th>Media</th>
+                                <th>Country</th>
+                                <th>URL</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-    <!-- end row -->
+                    <div class="col-12">
+                 <div class="panel panel-inverse">
+                   <div class="panel-heading">
+                    <div class="panel-heading-btn">
+                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-redo"></i></a>
+                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a> 
+                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                    </div>
+                         <h4 class="panel-title">Detailed Report Activity</h4>
+                </div>
+                <div class="panel-body"> 
+
+                     <div class="form-group">
+                        <label>From</label> <input type="date" name="" style="border: 1px solid #d3d8de;
+                        box-shadow: none; font-size: 12px;
+                        line-height: 1.42857143;
+                        height: 34px; padding: 6px 12px;"> To <input type="date" name="" style="border: 1px solid #d3d8de;
+                        box-shadow: none; font-size: 12px;
+                        line-height: 1.42857143;
+                        height: 34px; padding: 6px 12px;">
+
+                        <button type="submit" class="btn btn-warning" style="float: right;">Download</button>
+                        <!-- <input type="" name=""  style="border: 1px solid #d3d8de;
+                        box-shadow: none; font-size: 12px;
+                        line-height: 1.42857143;
+                        height: 34px; padding: 6px 12px; float: right; margin-right: 2px;" > -->
+
+                        <select style="border: 1px solid #d3d8de;
+                        box-shadow: none; font-size: 12px;
+                        line-height: 1.42857143;
+                        height: 34px; padding: 6px 12px; float: right; margin-right: 2px;">
+                            <option value="channel">Channel</option>
+                        </select>
+                    </div>
+
+                    <table class="table table-bordered" id="example4">
+                        <thead>
+                            <tr>
+                                <th>Campaign SRP</th>
+                                <th>Campaign Name</th>
+                                <th>Media ID</th>
+                                <th>Brand</th>
+                                <th>Products</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
 
 </div>
 
@@ -574,8 +520,11 @@
     <script src="./js/moment.js"></script>
     <script src="./js/form-plugins.demo.min.js"></script>
 
+    <script src="asset/datatable/datatables.min.js"></script>
+    <script src="asset/datatable/DataTables-1.10.18/js/dataTables.bootstrap.min.js"></script>
+
      
-   
+     
     <script>
         $(document).ready(function() {
             App.init();
@@ -595,6 +544,39 @@
       ga('send', 'pageview');
 
 </script>
+ 
+<script>
+    $(function () {
+    $('#example2').DataTable({
+    "pagingType": "full_numbers",
+    "aaSorting": []
+    });
+    });
+
+</script>
+
+<script>
+    $(function () {
+    $('#example3').DataTable({
+    "pagingType": "full_numbers",
+    "aaSorting": []
+    });
+    });
+
+</script>
+
+
+
+<script>
+    $(function () {
+    $('#example4').DataTable({
+    "pagingType": "full_numbers",
+    "aaSorting": []
+    });
+    });
+
+</script>
+
 
 
 
@@ -605,7 +587,3 @@
 
         
 
-        
-
-
- 

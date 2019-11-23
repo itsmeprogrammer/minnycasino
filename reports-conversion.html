@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if !IE]><!-->
@@ -30,6 +31,7 @@
 
 
 </head>
+
 <body> 
 
     <div id="header" class="header navbar-success" style=" background-color:rgba(0, 35, 102, 0.9);">
@@ -51,7 +53,9 @@
                         <span class="d-none d-md-inline">Testing</span> <b class="caret"></b>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
-             
+                        <!-- <a href="javascript:;" class="dropdown-item">Edit Profile</a>
+                        <a href="javascript:;" class="dropdown-item"><span class="badge badge-danger pull-right">2</span> Inbox</a>
+                        <a href="javascript:;" class="dropdown-item">Calendar</a> -->
                         <div class="dropdown-divider"></div>
                          <a href="#" onclick="event.preventDefault(); 
                             document.getElementById('logout-form').submit();" class="dropdown-item">
@@ -86,27 +90,26 @@
                 </ul>
                 <!-- end sidebar user -->
                 <!-- begin sidebar nav -->
-                <ul class="nav">
+                <ul class="nav"> 
                     <li class="nav-header">Navigation</li>
 
-                    <li class="has-sub active" style="border-bottom: 1px solid #46505a;
+                    <li class="has-sub" style="border-bottom: 1px solid #46505a;
     border-top: 1px solid #46505a;">
-                        <a href="javascript:;"> 
+                        <a href="javascript:;">
                               <b class="caret"></b>
                             <i class="fa fa-home"></i> 
                             <span>Home</span>
                         </a>
                         <ul class="sub-menu">
-                          <li class="has-sub expand">
+                          <li class="has-sub expand active">
                                 <a href="index.html">
                                     <b class="caret"></b>
                                    All Channels
                                 </a>
                                 <ul class="sub-menu" style="display: block;">
-                                    <li class="has-sub active ">
+                                    <li class="has-sub">
                                         <a href="mini-casino.html">
-                                            Minny Casino
-
+                                            Mini Casino
                                         </a>
                                     </li>
                                      <li class="has-sub">
@@ -117,7 +120,7 @@
                                 </ul>
                             </li>
                             <li><a href="javascript:;">News</a></li>
-                              <li class="has-sub expand">
+                              <li class="has-sub expand active">
                                 <a href="javascript:;">
                                     <b class="caret"></b>
                                    Open Support Ticket
@@ -134,7 +137,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <li class="has-sub expand ">
+                                <li class="has-sub expand active">
                                     <a href="javascript:;">
                                         <b class="caret"></b>
                                        Open Support Ticket
@@ -159,7 +162,8 @@
                                 </ul>
                             </li>
                         </ul>
-    <li class="has-sub " style="border-bottom: 1px solid #46505a;
+ 
+                    <li class="has-sub active" style="border-bottom: 1px solid #46505a;
     border-top: 1px solid #46505a;">
                         <a href="javascript:;">
                               <b class="caret"></b>
@@ -167,14 +171,19 @@
                             <span>Reports</span>
                         </a>
                         <ul class="sub-menu">
-                            <li class="has-sub active"><a href="statistics.html">Detailed activity report</a></li>
+                            <li class="has-sub "><a href="statistics.html">Detailed activity report</a></li>
 
                           <li class="has-sub expand ">
                                 <a href="javascript:;">
                                     <b class="caret"></b>
-                                   Customer activity
+                                   Customer reports
                                 </a>
                                 <ul class="sub-menu" style="display: block;">
+                                    <li class="has-sub">
+                                        <a href="statistics-ext.html">
+                                           Customer activity 
+                                        </a>
+                                    </li>
                                     <li class="has-sub">
                                         <a href="#">
                                            Customer daily activity 
@@ -199,7 +208,7 @@
                                         </a> 
                                     </li>
                                      <li class="has-sub">
-                                       <a href="#">
+                                       <a href="statistics-ext-subaff-1.html">
                                           Sub-affiliate daily 
                                         </a>
                                     </li>
@@ -209,14 +218,14 @@
                                         </a>
                                     </li>
                                 </ul>
-                                   <li class="has-sub expand ">
+                                   <li class="has-sub expand  active">
                                 <a href="javascript:;">
                                     <b class="caret"></b>
                                    Traffic reports
                                 </a>
                                 <ul class="sub-menu" style="display: block;">
-                                    <li class="has-sub">
-                                        <a href="#">
+                                    <li class="has-sub active">
+                                        <a href="reports-conversion.html">
                                          Hits & impressions report
 
                                         </a>
@@ -254,7 +263,6 @@
                         </ul>
                     </li>
 
-
                     <li class="has-sub" style="border-bottom: 1px solid #46505a;
     border-top: 1px solid #46505a;">
                         <a href="javascript:;">
@@ -268,7 +276,7 @@
                     </li>
 
 
-                   <li class="has-sub " style="border-bottom: 1px solid #46505a;
+                      <li class="has-sub" style="border-bottom: 1px solid #46505a;
     border-top: 1px solid #46505a;">
                         <a href="javascript:;">
                               <b class="caret"></b>
@@ -281,7 +289,6 @@
                             <li class="has-sub "><a href="payment-method.html">Payment instructions</a></li>
                         </ul>
                     </li>
-
 
                     <li class="has-sub" style="border-bottom: 1px solid #46505a;
     border-top: 1px solid #46505a;">
@@ -315,7 +322,7 @@
                         </ul>
                     </li>
 
-                   
+                 
                     <li class="has-sub " style="border-bottom: 1px solid #46505a;
     border-top: 1px solid #46505a;">
                         <a href="javascript:;">
@@ -337,105 +344,37 @@
         
         <div class="sidebar-bg"></div>
 
+     
 
         <div id="content" class="content">
             <!-- begin breadcrumb -->
             <ol class="breadcrumb float-xl-right">
                 <li class="breadcrumb-item"><a href="javascript:;">Home</a></li>
-                <li class="breadcrumb-item active">Minny Casino</li>
+                <li class="breadcrumb-item active">Hits & impressions report</li>
             </ol>
+            <h1 class="page-header">Hits & impressions report <small> </small></h1>
             <!-- end breadcrumb -->
-            <!-- begin page-header -->
-            <h1 class="page-header">Minny Casino<small> </small></h1>
-            <!-- end page-header -->
-            <div class="form-group float-xl-right" style="margin-top: 19px;">
-                <select class="form-control ">
-                    <option value="This Month">This Month</option>
-                    <option value="Today">Today</option>
-                    <option value="Yesterday">Yesterday</option>
-                    <option value="This Year">This Year</option>
-                </select>
-             </div>
-         </div>
-
-            <div id="content" class="content">
-            <!-- begin row -->
-            <div class="form-group" style="margin-top: -6px;">
-            <h4 style="padding-top: -0px; line-height:-10;">Static at a Glance</h4>
-            </div>
-            <div class="row">
-                <!-- begin col-3 -->
-                <div class="col-xl-3 col-md-6">
-                    <div class="widget widget-stats bg-black">
-                        <div class="stats-icon"> </div>
-                        <div class="stats-info">
-                            <h4>Total Customers</h4>
-                            <p>0</p>    
-                        </div>
-                        <div class="stats-link">
-                           <p></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- end col-3 -->
-                <!-- begin col-3 -->
-                <div class="col-xl-3 col-md-6">
-                    <div class="widget widget-stats bg-black" >
-                        <div class="stats-icon"></div>
-                        <div class="stats-info">
-                            <h4>Hits</h4>
-                            <p>0</p>   
-                        </div>
-                        <div class="stats-link">
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- end col-3 -->
-
-                  <!-- begin col-3 -->
-                <div class="col-xl-3 col-md-6">
-                    <div class="widget widget-stats bg-black">
-                        <div class="stats-icon"></div>
-                        <div class="stats-info">
-                            <h4>Sign Ups</h4>
-                            <p>0</p>   
-                        </div>
-                        <div class="stats-link">
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- end col-3 -->
-             <div class="col-xl-3 col-md-6">
-                    <div class="widget widget-stats bg-black">
-                        <div class="stats-icon"></div>
-                        <div class="stats-info">
-                            <h4>First Deposit Counts</h4>
-                            <p>0</p>   
-                        </div>
-                        <div class="stats-link">
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="col-xl-3 col-md-6">
-                    <div class="widget widget-stats bg-black">
-                        <div class="stats-icon"></div>
-                        <div class="stats-info">
-                            <h4>Income</h4>
-                            <p>0</p>   
-                        </div>
-                        <div class="stats-link">
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
                <div class="row">
                 <div class="col-md-12">
+
+                <div class="alert alert-primary">
+                        <i class="fa fa-info-circle fa-lg m-r-5 pull-left m-t-2"></i>  
+                      This report illustrates the ratio of impression to clicks (Click Through Rate), the number of visitors who clicked (Click Reach) and the frequency that the visitors clicked (Click Frequency).
+                    </div>
+
+
+                     <div class="alert alert-info">
+                        <div class="form-group" >
+                                <label>Filter by channel:</label>
+                            <select class="form-control ">
+                                <option value="All Channels">All Channels</option>
+                                <option value="MinnyCasino">MinnyCasino</option>
+                                <option value="Sub Affliate">Sub Affliate</option>
+                            </select>
+                        </div>
+                    </div>
+                <div class="row">
+                <div class="col-6">
                  <div class="panel panel-success">
                    <div class="panel-heading">
                     <div class="panel-heading-btn">
@@ -444,68 +383,133 @@
                         <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
                         <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
                     </div>
-                    <h4 class="panel-title">Hits, impressions & signups</h4>
+                    <h4 class="panel-title">Reports period</h4>
                 </div>
                 <div class="panel-body">
-                    <div class="alert alert-primary">
-                        <i class="fa fa-info-circle fa-lg m-r-5 pull-left m-t-2"></i>  
-                        No Data
-                    </div>
-                    <a href="#">Hits & impressions report</a>
+                    <div class="form-group">
+                    <label>Preset Period</label>
+                            <label>Filter by channel:</label>
+                            <select class="form-control ">
+                                <option value="All Channels">This Month</option>
+                                <option value="Last 7 days">Last 7 days</option>
+                                <option value="Last 30 days">Last 30 days</option>
+                                <option value="This month">This month</option>
+                                <option value="Last month">Last month</option>
+                                <option value="This year">This year</option>
+                            </select>
+                        </div>
+
+                <div class="form-group">
+                    <label>Date from:</label>
+                    <input type="date" name="" class="form-control" >
+                </div>
+
+                <div class="form-group">
+                    <label>Date to:</label>
+                    <input type="date" name="" class="form-control" >
+                    <a href="#">Clear dates</a>
                 </div>
             </div>
         </div>
-
-           <div class="col-md-12">
-                 <div class="panel panel-success">
-                   <div class="panel-heading">
-                    <div class="panel-heading-btn">
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-redo"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
-                    </div>
-                    <h4 class="panel-title">Earnings</h4>
-                </div>
-                <div class="panel-body">
-                    <div class="alert alert-primary">
-                        <i class="fa fa-info-circle fa-lg m-r-5 pull-left m-t-2"></i>  
-                        No Data
-                    </div>
-                    <a href="#">Earnings</a> | <a href="#">Financial Reports</a>
-                </div>
-            </div>
-        </div>
-
-         <div class="col-md-12">
-                 <div class="panel panel-success">
-                   <div class="panel-heading">
-                    <div class="panel-heading-btn">
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-redo"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
-                    </div>
-                    <h4 class="panel-title">Live visits (all channels)</h4>
-                </div>
-                <div class="panel-body">
-                    <div class="alert alert-primary">
-                        <i class="fa fa-info-circle fa-lg m-r-5 pull-left m-t-2"></i>  
-                        No Data
-                    </div>
-                    <a href="#">View all</a>
-                </div>
-            </div>
-        </div>
-
-
 
     </div>
+      
+     <div class="col-6">
+                 <div class="panel panel-success">
+                   <div class="panel-heading">
+                    <div class="panel-heading-btn">
+                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-redo"></i></a>
+                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                    </div>
+                    <h4 class="panel-title">Filter report</h4>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                    <div class="col-sm-4">
+                    <div class="form-group">
+                    <label>Filter by campaign group:</label>
+
+                            <select class="form-control ">
+                                <option value="All campaign groups">All campaign groups</option>
+                                <option value="No campaign group">No campaign group</option>
+                            </select>
+                        </div>
+                        </div>
+                <div class="col-sm-4">
+                <div class="form-group">
+                    <label>Filter by campaign:</label>
+                <select class="form-control ">
+                    <option value="All campaign groups">All campaigns</option>
+                    <option value="No campaign group">Default campaign (1)</option>
+                </select>
+                </div>
+                </div>
+                  <div class="col-sm-4">
+                <div class="form-group">
+                    <label>Filter by media IDs:</label>
+                    <input type="text" name="" class="form-control" >
+                </div>
+            </div>
+              <div class="col-sm-4">
+                 <div class="form-group">
+                    <label>Filter by landing page IDs:</label>
+                    <input type="text" name="" class="form-control" >
+                </div>
+                </div>
+                  <div class="col-sm-4">
+
+                  <div class="form-group">
+                    <label>Filter brands:</label>
+                <select class="form-control ">
+                    <option value="All brands">All brands</option>
+                </select>
+                </div>
+                </div>
+                  <div class="col-sm-4">
+                 <div class="form-group">
+                    <label>Filter by products:</label>
+                <select class="form-control ">
+                    <option value="All products">All products</option>
+                </select>
+                </div>
+                </div>
+            </div>
+        </div>
             <!-- end panel -->
+
+
         </div>
         <!-- end col-4 -->
-
     </div>
+     <div class="col-12">
+                 <div class="panel panel-success">
+                   <div class="panel-heading">
+                    <div class="panel-heading-btn">
+                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-redo"></i></a>
+                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                    </div>
+                    <h4 class="panel-title">Download options</h4>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                    <button type="submit" class="btn btn-warning">Display Report</button>
+                    <button type="submit" class="btn btn-warning">Download Report</button>
+                     </div>
+                <div class="form-group">
+                <div class="alert alert-primary">
+                        <i class="fa fa-info-circle fa-lg m-r-5 pull-left m-t-2"></i>  
+                       No data.
+                    </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
     <!-- end row -->
 
 </div>
@@ -560,7 +564,6 @@
 
 
         
-
 
         
 
