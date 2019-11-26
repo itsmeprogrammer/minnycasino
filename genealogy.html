@@ -1,36 +1,29 @@
 
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="en">
-<!--<![endif]-->
 <head>
-	<meta charset="utf-8" />
-	<title>Minny Affiliates </title>
-	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
-	
-    <!-- ================== BEGIN BASE CSS STYLE ================== -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <meta charset="utf-8">
+  <title>Genealogy</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/jquery.orgchart.css">
+  <link rel="stylesheet" href="css/style.css">
+
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <link href="./css/jquery-ui.min.css" rel="stylesheet" />
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
     <link href="./css/all.min.css" rel="stylesheet" />
     <link href="./css/animate.min.css" rel="stylesheet" />
-    <link href="./css/style.min.css" rel="stylesheet" />
+   <!--  <link href="./css/style.min.css" rel="stylesheet" /> -->
     <link href="./css/style-responsive.min.css" rel="stylesheet" />
     <link href="./css/font-awesome.min.css" rel="stylesheet" />
     <link href="./css/jquery.gritter.css" rel="stylesheet" />
     <link href="./css/defaults.css" rel="stylesheet" id="theme" />
 
- 
-    <!-- ================== END BASE CSS STYLE ================== --> 
-    
-    <!-- ================== BEGIN BASE JS ================== -->
-    <script src="./js/pace.min.js"></script>
-    <!-- ================== END BASE JS ================== -->
-
-
 </head>
-<body> 
+<body>
+
+
 
     <div id="header" class="header navbar-success" style=" background-color:rgba(0, 35, 102, 0.9);">
             <!-- begin navbar-header -->
@@ -46,14 +39,14 @@
             
             <ul class="navbar-nav navbar-right">
                 <li class="dropdown navbar-user">
-                    <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown" style=" display: block;
+    text-decoration: none;
+    line-height: 20px;
+    border: none;">
                         <img src="./img/user.png" alt="" /> 
                         <span class="d-none d-md-inline">Testing</span> <b class="caret"></b>
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <!-- <a href="javascript:;" class="dropdown-item">Edit Profile</a>
-                        <a href="javascript:;" class="dropdown-item"><span class="badge badge-danger pull-right">2</span> Inbox</a>
-                        <a href="javascript:;" class="dropdown-item">Calendar</a> -->
+                    <div class="dropdown-menu dropdown-menu-right" >
                         <div class="dropdown-divider"></div>
                          <a href="#" onclick="event.preventDefault(); 
                             document.getElementById('logout-form').submit();" class="dropdown-item">
@@ -64,10 +57,8 @@
                     </div>
                 </li>
             </ul>
-            <!-- end header navigation right -->
         </div>
-        <!-- end #header -->
-            <div id="sidebar" class="sidebar">
+          <div id="sidebar" class="sidebar">
             <!-- begin sidebar scrollbar -->
             <div data-scrollbar="true" data-height="100%">
                 <!-- begin sidebar user -->
@@ -91,7 +82,7 @@
      <ul class="nav">
                     <li class="nav-header">Navigation</li>
 
-                    <li class="has-sub active" style="border-bottom: 1px solid #46505a;
+                    <li class="has-sub " style="border-bottom: 1px solid #46505a; 
     border-top: 1px solid #46505a;">
                         <a href="javascript:;">
                               <b class="caret"></b>
@@ -99,7 +90,7 @@
                             <span>Home</span>
                         </a>
                         <ul class="sub-menu">
-                          <li class="has-sub active expand">
+                          <li class="has-sub  expand"> 
                                 <a href="index.html">
                                     <b class="caret"></b>
                                    All Channels
@@ -161,7 +152,8 @@
                             </li>
                         </ul>
 
-                          <li class="has-sub " style="border-bottom: 1px solid #46505a;
+
+                          <li class="has-sub active " style="border-bottom: 1px solid #46505a;
     border-top: 1px solid #46505a;">
                         <a href="javascript:;">
                               <b class="caret"></b>
@@ -170,7 +162,7 @@
                         </a>
 
                         <ul class="sub-menu">
-                            <li class="has-sub"><a href="genealogy.html">Genealogy</a></li>
+                            <li class="has-sub active"><a href="genealogy.html">Genealogy</a></li>
 
                </ul>
 
@@ -350,182 +342,12 @@
         
         <div class="sidebar-bg"></div>
 
-        <div id="content" class="content">
-            <!-- begin breadcrumb -->
-            <ol class="breadcrumb float-xl-right">
-                <li class="breadcrumb-item"><a href="javascript:;">Home</a></li>
-                <li class="breadcrumb-item active">All channels</li>
-            </ol>
-            <!-- end breadcrumb -->
-            <!-- begin page-header -->
-            <h1 class="page-header">All channels <small> </small></h1>
-            <!-- end page-header -->
-            <div class="form-group float-xl-right" style="margin-top: 19px;">
-                <select class="form-control ">
-                    <option value="This Month">This Month</option>
-                    <option value="Today">Today</option>
-                    <option value="Yesterday">Yesterday</option>
-                    <option value="This Year">This Year</option>
-                </select>
-             </div>
-         </div>
 
-            <div id="content" class="content">
-            <!-- begin row -->
-            <div class="form-group" style="margin-top: -6px;">
-            <h4 style="padding-top: -0px; line-height:-10;">Static at a Glance</h4>
-            </div>
-            <div class="row">
-                <!-- begin col-3 -->
-                <div class="col-xl-3 col-md-6">
-                    <div class="widget widget-stats bg-black">
-                        <div class="stats-icon"> </div>
-                        <div class="stats-info">
-                            <h4>Total Customers</h4>
-                            <p>0</p>    
-                        </div>
-                        <div class="stats-link">
-                           <p></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- end col-3 -->
-                <!-- begin col-3 -->
-                <div class="col-xl-3 col-md-6">
-                    <div class="widget widget-stats bg-black" >
-                        <div class="stats-icon"></div>
-                        <div class="stats-info">
-                            <h4>Hits</h4>
-                            <p>0</p>   
-                        </div>
-                        <div class="stats-link">
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- end col-3 -->
-
-                  <!-- begin col-3 -->
-                <div class="col-xl-3 col-md-6">
-                    <div class="widget widget-stats bg-black">
-                        <div class="stats-icon"></div>
-                        <div class="stats-info">
-                            <h4>Sign Ups</h4>
-                            <p>0</p>   
-                        </div>
-                        <div class="stats-link">
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- end col-3 -->
-             <div class="col-xl-3 col-md-6">
-                    <div class="widget widget-stats bg-black">
-                        <div class="stats-icon"></div>
-                        <div class="stats-info">
-                            <h4>First Deposit Counts</h4>
-                            <p>0</p>   
-                        </div>
-                        <div class="stats-link">
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="col-xl-3 col-md-6">
-                    <div class="widget widget-stats bg-black">
-                        <div class="stats-icon"></div>
-                        <div class="stats-info">
-                            <h4>Income</h4>
-                            <p>0</p>   
-                        </div>
-                        <div class="stats-link">
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-               <div class="row">
-                <div class="col-md-12">
-                 <div class="panel panel-success">
-                   <div class="panel-heading">
-                    <div class="panel-heading-btn">
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-redo"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
-                    </div>
-                    <h4 class="panel-title">Hits, impressions & signups</h4>
-                </div>
-                <div class="panel-body">
-                    <div class="alert alert-primary">
-                        <i class="fa fa-info-circle fa-lg m-r-5 pull-left m-t-2"></i>  
-                        No Data
-                    </div>
-                    <a href="#">Hits & impressions report</a>
-                </div>
-            </div>
-        </div>
-
-           <div class="col-md-12">
-                 <div class="panel panel-success">
-                   <div class="panel-heading">
-                    <div class="panel-heading-btn">
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-redo"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
-                    </div>
-                    <h4 class="panel-title">Earnings</h4>
-                </div>
-                <div class="panel-body">
-                    <div class="alert alert-primary">
-                        <i class="fa fa-info-circle fa-lg m-r-5 pull-left m-t-2"></i>  
-                        No Data
-                    </div>
-                    <a href="#">Earnings</a> | <a href="#">Financial Reports</a>
-                </div>
-            </div>
-        </div>
-
-         <div class="col-md-12">
-                 <div class="panel panel-success">
-                   <div class="panel-heading">
-                    <div class="panel-heading-btn">
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-redo"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
-                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
-                    </div>
-                    <h4 class="panel-title">Live visits (all channels)</h4>
-                </div>
-                <div class="panel-body">
-                    <div class="alert alert-primary">
-                        <i class="fa fa-info-circle fa-lg m-r-5 pull-left m-t-2"></i>  
-                        No Data
-                    </div>
-                    <a href="#">View all</a>
-                </div>
-            </div>
-        </div>
+  <div id="chart-container" align="center"></div>
 
 
 
-    </div>
-            <!-- end panel -->
-        </div>
-        <!-- end col-4 -->
-
-    </div>
-    <!-- end row -->
-
-</div>
-
-
-
-
-            <!-- ================== BEGIN BASE JS ================== -->
+           <!-- ================== BEGIN BASE JS ================== -->
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
@@ -566,6 +388,42 @@
 
 
 
+  <script type="text/javascript" src="js/jquery.min-1.js"></script>
+  <script type="text/javascript" src="js/jquery.orgchart.js"></script>
+  <script type="text/javascript">
+    $(function() {
+
+    var datascource = {
+      'name': '',
+      'title': '',
+      'children': [
+        { 'name': '', 'title': '',
+          'children': [
+            { 'name': '', 'title': '' },
+            { 'name': '', 'title': '' }
+          ]
+        },
+       
+        { 'name': '', 'title': '',
+          'children': [
+            { 'name': '', 'title': 'r' },
+            { 'name': '', 'title': 'r' }
+          ]
+        }
+      ]
+    };
+
+    $('#chart-container').orgchart({
+      'data' : datascource,
+      'nodeContent': 'title',
+      'toggleSiblingsResp': true
+    });
+
+  });
+  </script>
+
+
+
 </body>
 </html>
    
@@ -573,5 +431,3 @@
 
         
 
-
- 
