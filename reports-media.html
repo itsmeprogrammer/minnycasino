@@ -1,4 +1,4 @@
-
+ 
 
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
@@ -226,13 +226,13 @@
                                    Traffic reports
                                 </a>
                                 <ul class="sub-menu" style="display: block;">
-                                    <li class="has-sub active">
+                                    <li class="has-sub ">
                                         <a href="reports-conversion.html">
                                          Hits & impressions report
 
                                         </a>
                                     </li> 
-                                     <li class="has-sub">
+                                     <li class="has-sub active">
                                        <a href="reports-media.html">
                                          Media report
                                         </a>
@@ -352,16 +352,22 @@
             <!-- begin breadcrumb -->
             <ol class="breadcrumb float-xl-right">
                 <li class="breadcrumb-item"><a href="javascript:;">Home</a></li>
-                <li class="breadcrumb-item active">Hits & impressions report</li>
+                <li class="breadcrumb-item active">Media report</li>
             </ol>
-            <h1 class="page-header">Hits & impressions report <small> </small></h1>
+            <h1 class="page-header">Media report <small> </small></h1>
             <!-- end breadcrumb -->
                <div class="row">
                 <div class="col-md-12">
 
                 <div class="alert alert-primary">
                         <i class="fa fa-info-circle fa-lg m-r-5 pull-left m-t-2"></i>  
-                      This report illustrates the ratio of impression to clicks (Click Through Rate), the number of visitors who clicked (Click Reach) and the frequency that the visitors clicked (Click Frequency).
+                     This report illustrates per media, the ratio of Impressions to Clicks (Click Through Ratio) the number of Visitors who clicked (Click Reach) and the frequency that the Visitors clicked (Click Frequency).
+                    </div>
+
+
+                      <div class="alert alert-primary">
+                        <i class="fa fa-info-circle fa-lg m-r-5 pull-left m-t-2"></i>  
+                    Note that this report has its history limited to 12 months.
                     </div>
 
 
@@ -429,7 +435,7 @@
                 </div>
                 <div class="panel-body">
                     <div class="row">
-                    <div class="col-sm-4">
+
                     <div class="form-group">
                     <label>Filter by campaign group:</label>
 
@@ -439,7 +445,7 @@
                             </select>
                         </div>
                         </div>
-                <div class="col-sm-4">
+               
                 <div class="form-group">
                     <label>Filter by campaign:</label>
                 <select class="form-control ">
@@ -447,44 +453,20 @@
                     <option value="No campaign group">Default campaign (1)</option>
                 </select>
                 </div>
-                </div>
-                  <div class="col-sm-4">
+                 
                 <div class="form-group">
                     <label>Filter by media IDs:</label>
                     <input type="text" name="" class="form-control" >
                 </div>
             </div>
-              <div class="col-sm-4">
-                 <div class="form-group">
-                    <label>Filter by landing page IDs:</label>
-                    <input type="text" name="" class="form-control" >
-                </div>
-                </div>
-                  <div class="col-sm-4">
-
-                  <div class="form-group">
-                    <label>Filter brands:</label>
-                <select class="form-control ">
-                    <option value="All brands">All brands</option>
-                </select>
-                </div>
-                </div>
-                  <div class="col-sm-4">
-                 <div class="form-group">
-                    <label>Filter by products:</label>
-                <select class="form-control ">
-                    <option value="All products">All products</option>
-                </select>
-                </div>
-                </div>
+             
             </div>
         </div>
             <!-- end panel -->
-
+        </div>
 
         </div>
         <!-- end col-4 -->
-    </div>
      <div class="col-12">
                  <div class="panel panel-success">
                    <div class="panel-heading">
@@ -511,6 +493,39 @@
             </div>
         </div>
     </div>
+
+
+       <div class="col-12">
+                 <div class="panel panel-success">
+                   <div class="panel-heading">
+                    <div class="panel-heading-btn">
+                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-redo"></i></a>
+                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                        <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                    </div>
+                    <h4 class="panel-title">&nbsp;</h4>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                    	<table class="table table-bordered">
+                    		<thead>
+                    			<tr>
+                    				<th>Media</th>
+                    				<th>Impressions</th>
+                    				<th>Click</th>
+                    				<th>Click through ratio</th>
+                    				<th>Click reach</th>
+                    				<th>Click frequency</th>
+                    			</tr>
+                    		</thead>
+                    	</table>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 </div>
     <!-- end row -->
 
